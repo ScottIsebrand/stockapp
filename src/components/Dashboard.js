@@ -3,16 +3,21 @@ import { stocksData } from '../stocksData';
 
 function Dashboard() {
   return (
-    <div>
+    <div className="stocksList">
+      <h4>Your Stocks Dashboard:</h4>
       {stocksData.map((stock) => {
-        const { name, symbol } = stock;
+        const { name, symbol, lastPrice, change, high, low, open } = stock;
 
         return (
-          <Link to={`/stock/${symbol}`} key={symbol}>
-            <p className="stocksList">
-              {name} ({symbol})
+          <div>
+            <p>
+              <Link to={`/stock/${symbol}`} key={symbol}>
+                {name} ({symbol})
+              </Link>
+              . Last Price: {lastPrice}. Change: {change}. High: {high}. Low:{' '}
+              {low}. Open: {open}
             </p>
-          </Link>
+          </div>
         );
       })}
     </div>
