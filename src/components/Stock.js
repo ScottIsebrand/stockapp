@@ -15,8 +15,8 @@ function Stock() {
   console.log(params);
 
   return (
-    <div>
-      <h3>{stock.name}</h3>
+    <div className="stockComponent">
+      <h3 className="stockNameInStockComponent">{stock.name}</h3>
       <p>{symbol}</p>
       <p>Last price: {stock.lastPrice}</p>
       <p>Change: {stock.change}</p>

@@ -3,13 +3,13 @@ import { stocksData } from '../stocksData';
 
 function Dashboard() {
   return (
-    <div className="stocksList">
+    <div>
       {stocksData.map((stock) => {
         const { name, symbol } = stock;
 
         return (
           <Link to={`/stock/${symbol}`} key={symbol}>
-            <p>
+            <p className="stocksList">
               {name} ({symbol})
             </p>
           </Link>

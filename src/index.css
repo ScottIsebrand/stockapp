@@ -7,6 +7,33 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.navTextLink {
+  font-family: 'Roboto', sans-serif;
+  color: white;
+}
+
+.navBrand {
+  color: wheat;
+}
+
+.stocksList {
+  text-align: left;
+  font-size: 1rem;
+}
+
+.homePageWrapper,
+.aboutPageWrapper {
+  margin: 1rem;
+}
+
+.stockComponent {
+  margin: 1rem;
+}
+
+.stockNameInStockComponent {
+  margin-bottom: 1rem;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
